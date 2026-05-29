@@ -212,3 +212,55 @@
   }
 
 }
+
+/* =========================
+   IMAGEN LATERAL + CARDS
+========================= */
+
+.transport-bottom-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.transport-side-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.transport-side-img {
+  width: 100%;
+  max-width: 625px;
+  height: 520px;
+  object-fit: cover;
+
+  border-radius: 20px;
+
+  box-shadow: 0 10px 30px rgba(0,0,0,0.12);
+}
+
+.transport-cards-side {
+  flex: 1;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  gap: 25px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 992px) {
+
+  .transport-bottom-content {
+    flex-direction: column;
+  }
+
+  .transport-side-img {
+    max-width: 100%;
+    height: auto;
+  }
+
+}
