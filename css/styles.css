@@ -15,6 +15,58 @@
 
 }
 
+.top-bar{
+  width: 100%;
+  background: #f3f3f3;
+  padding: 14px 30px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.left-logos{
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.logo-gob{
+  height: 38px;
+}
+
+.logo-pdt{
+  height: 38px;
+}
+
+.right-icons{
+  display: flex;
+  gap: 15px;
+}
+
+.right-icons a{
+  width: 48px;
+  height: 48px;
+
+  background: #8b0029;
+  color: white;
+
+  border-radius: 50%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  text-decoration: none;
+  font-size: 22px;
+
+  transition: 0.3s;
+}
+
+.right-icons a:hover{
+  background: #6f0021;
+}
+
 /* NAVBAR */
 .navbar{
   padding-bottom: 0;
@@ -898,134 +950,6 @@ footer {
 
   .popup-contenido{
     border-radius: 18px;
-  }
-
-}
-
-/* =========================
-   REDES FLOTANTES
-========================= */
-
-.social-float{
-  position: fixed;
-
-  left: 0;
-  bottom: 25px;
-
-  z-index: 9999;
-
-  display: flex;
-  align-items: end;
-}
-
-/* BOTON PRINCIPAL */
-.social-toggle{
-  width: 60px;
-  height: 60px;
-
-  background: #c8ab3f;
-  color: #fff;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  border-radius: 0 18px 18px 0;
-
-  font-size: 28px;
-
-  cursor: pointer;
-
-  box-shadow: 0 8px 25px rgba(0,0,0,0.2);
-
-  transition: 0.3s ease;
-}
-
-.social-toggle:hover{
-  background: #b6972d;
-}
-
-/* CONTENEDOR REDES */
-.social-items{
-  display: flex;
-  flex-direction: column;
-
-  gap: 12px;
-
-  margin-left: 12px;
-
-  opacity: 0;
-  visibility: hidden;
-
-  transform: translateX(-20px);
-
-  transition: 0.3s ease;
-}
-
-/* MOSTRAR AL HOVER */
-.social-float:hover .social-items{
-  opacity: 1;
-  visibility: visible;
-  transform: translateX(0);
-}
-
-/* BOTONES */
-.social-btn{
-  min-width: 170px;
-
-  background: white;
-  color: #222;
-
-  text-decoration: none;
-
-  padding: 14px 18px;
-
-  border-radius: 16px;
-
-  display: flex;
-  align-items: center;
-  gap: 12px;
-
-  font-weight: 600;
-
-  box-shadow: 0 6px 18px rgba(0,0,0,0.15);
-
-  transition: 0.3s ease;
-}
-
-.social-btn:hover{
-  transform: translateX(5px);
-  background: #f3f3f3;
-  color: #000;
-}
-
-/* ICONOS */
-.social-btn i{
-  font-size: 24px;
-}
-
-/* =========================
-   RESPONSIVE
-========================= */
-
-@media (max-width: 768px){
-
-  .social-toggle{
-    width: 52px;
-    height: 52px;
-    font-size: 22px;
-  }
-
-  .social-btn{
-    min-width: 140px;
-
-    padding: 12px 14px;
-
-    font-size: 14px;
-  }
-
-  .social-btn i{
-    font-size: 20px;
   }
 
 }
